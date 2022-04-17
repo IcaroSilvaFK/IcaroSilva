@@ -42,4 +42,16 @@
     display: block;
     text-align: center;
   }
+  #contato {
+    width: 100%;
+    flex-direction: column;
+
+    padding: 20px;
+  }
+  #contato button {
+    width: 100%;
+  }
+  #contato div {
+    gap: 20px;
+  }
 }
