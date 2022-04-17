@@ -42,7 +42,7 @@ header div span {
   position: absolute;
 }
 nav ul li a:hover {
-  color: var(--gray-400);
+  color: var(--purple-800);
   transition: linear 0.2s;
 }
 @media (max-width: 500px) {
