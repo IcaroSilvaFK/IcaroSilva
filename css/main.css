@@ -1,0 +1,163 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: auto;
+
+  margin-top: 100px;
+}
+main #presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+main section article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main section article h1 {
+  font-size: 50px;
+  line-height: 100%;
+}
+
+main section article p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--gray-700);
+}
+section article button {
+  display: block;
+  margin: 30px auto;
+
+  padding: 10px 30px;
+
+  border-radius: 20px;
+
+  background: var(--purple-800);
+
+  color: #fff;
+
+  font-size: 18px;
+
+  transition: transform 0.3s;
+}
+section article button:hover {
+  transform: scale(1.1);
+}
+
+main #sobre {
+  width: 100%;
+  background: var(--gray-700);
+  margin-top: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: #fff;
+
+  padding: 50px 0;
+}
+
+#description {
+  width: 500px;
+}
+
+#description p {
+  color: #fff;
+}
+
+#sobre article div svg {
+  width: 40px;
+  height: 40px;
+}
+#html {
+  color: #de4a24;
+}
+
+#css {
+  color: #2658e3;
+}
+#js {
+  color: #ebd74c;
+}
+#react {
+  color: #62dafb;
+}
+
+#sass {
+  color: #c66396;
+}
+#styled-components {
+  color: #c66396;
+}
+
+#ferramentas {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  gap: 20px;
+}
+
+#ferramentas div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#ferramentas div p {
+  transform: translateY(-50%);
+}
+
+#projetos {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  padding: 20px 0;
+}
+#projetos div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#projetos img {
+  width: 350px;
+  border-radius: 5px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+#projetos img:hover {
+  transform: scale(1.1);
+}
+
+#projetos a strong span {
+  color: var(--cyan-600);
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#contato div {
+  display: flex;
+  gap: 15px;
+}
+#contato svg {
+  width: 30px;
+  height: 30px;
+}

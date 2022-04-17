@@ -1,0 +1,45 @@
+@media (max-width: 500px) {
+  #presentation {
+    flex-direction: column;
+    width: 100%;
+  }
+  #presentation article {
+    align-items: center;
+    width: 100%;
+  }
+  #presentation article h1 {
+    font-size: 22px;
+  }
+  #presentation article p {
+    width: 100%;
+    text-align: center;
+  }
+  #presentation div img {
+    width: 350px;
+  }
+  #description {
+    width: 100%;
+  }
+  #sobre {
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+  }
+  #sobre div img {
+    width: 350px;
+  }
+  #text p {
+    width: 100%;
+  }
+  #ferramentas {
+    flex-direction: column;
+  }
+  #ferramentas div {
+    gap: 20px;
+  }
+  #projetos strong {
+    display: block;
+    text-align: center;
+  }
+}
