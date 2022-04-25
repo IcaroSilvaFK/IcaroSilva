@@ -21,13 +21,13 @@ main section article {
 }
 
 main section article h1 {
-  font-size: 50px;
   line-height: 100%;
+
+  font-size: 3rem;
 }
 
 main section article p {
   margin-top: 20px;
-  font-size: 18px;
   color: var(--gray-700);
 }
 section article button {
@@ -39,8 +39,6 @@ section article button {
   background: var(--purple-800);
 
   color: #fff;
-
-  font-size: 18px;
 
   transition: transform 0.3s;
 }
@@ -71,34 +69,18 @@ main #sobre {
   color: #fff;
 }
 
+#text h2 {
+  font-size: 2.5rem;
+}
+
 #sobre article div svg {
   width: 40px;
   height: 40px;
 }
-#html {
-  color: #de4a24;
-}
-
-#css {
-  color: #2658e3;
-}
-#js {
-  color: #ebd74c;
-}
-#react {
-  color: #62dafb;
-}
-
-#sass {
-  color: #c66396;
-}
-#styled-components {
-  color: #c66396;
-}
-
 #ferramentas {
   display: flex;
   align-items: center;
+  flex-direction: column;
   margin-top: 20px;
 
   gap: 20px;
@@ -106,12 +88,20 @@ main #sobre {
 
 #ferramentas div {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
 }
 
 #ferramentas div p {
   transform: translateY(-50%);
+}
+
+#ferramentas div img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 #projetos {
@@ -145,6 +135,10 @@ main #sobre {
   color: var(--cyan-600);
 }
 
+#projetos a strong span:hover {
+  text-decoration: underline;
+}
+
 #contato {
   margin-top: 30px;
   display: flex;
@@ -167,11 +161,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
+  padding: 20px 0;
 }
 
 footer strong {
-  font-size: 20px;
-
   padding: 10px 0;
 }
 footer div {
@@ -185,4 +179,9 @@ footer div svg {
 
 #footer {
   display: flex;
+}
+
+#tecnologies img:hover {
+  transform: scale(1.1);
+  transition: linear 0.3s;
 }
