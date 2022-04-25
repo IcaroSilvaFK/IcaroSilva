@@ -37,16 +37,14 @@ function CheckPx() {
 }
 
 ScrollReveal({ distance: "60px" });
-ScrollReveal().reveal("#text", { origin: "left", mobile: true });
-ScrollReveal().reveal("#imgPrincipal", { origin: "right", mobile: true });
+ScrollReveal().reveal("#text", { origin: "left" });
+ScrollReveal().reveal("#imgPrincipal", { origin: "right" });
 ScrollReveal().reveal("#projetos__container", {
   origin: "left",
-  mobile: true,
 });
 
 ScrollReveal().reveal($imgs, {
   origin: "bottom",
-  mobile: true,
 });
 
 // $imgs.each((index, value) => $(value).css("display", "none"));
