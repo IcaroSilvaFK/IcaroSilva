@@ -1,4 +1,5 @@
 const $imgs = $("#tecnologies img");
+const $ulAnimation = document.getElementById("listAnimation");
 
 $("#menuMobile").click(() => {
   $("#menuMobile").css("display", "none");
@@ -58,7 +59,7 @@ for (let item = 1; item < 11; item++) {
   list.style.animationDuration = `${duration}s`;
   list.style.animationTimingFunction = `cubic-bezier(${Math.random()},${Math.random()},${Math.random()},${Math.random()})`;
 
-  document.getElementById("animation").appendChild(list);
+  $ulAnimation.appendChild(list);
 }
 
 ScrollReveal({ distance: "60px" });

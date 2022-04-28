@@ -6,6 +6,8 @@ main {
   margin: auto;
 
   margin-top: 100px;
+
+  overflow: hidden;
 }
 main #presentation {
   display: flex;
@@ -61,9 +63,7 @@ main #sobre {
   padding: 50px 0;
 
   position: relative;
-
   overflow: hidden;
-  z-index: 1;
 }
 
 #description {
@@ -191,7 +191,7 @@ footer div svg {
 
 /*! Animação */
 
-.animateItem {
+#listAnimation li {
   position: absolute;
 
   background: rgba(255, 255, 255, 0.2);
