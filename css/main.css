@@ -59,6 +59,11 @@ main #sobre {
   color: #fff;
 
   padding: 50px 0;
+
+  position: relative;
+
+  overflow: hidden;
+  z-index: 1;
 }
 
 #description {
@@ -182,4 +187,28 @@ footer div svg {
 #tecnologies img:hover {
   transform: scale(1.1);
   transition: linear 0.3s;
+}
+
+/*! Animação */
+
+.animateItem {
+  position: absolute;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  animation: translateRotate 2s linear infinite alternate;
+}
+
+@keyframes translateRotate {
+  0% {
+    opacity: 0;
+    transform: translateY(0) rotate(360deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
 }

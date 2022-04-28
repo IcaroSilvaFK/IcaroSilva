@@ -36,6 +36,31 @@ function CheckPx() {
   }
 }
 
+for (let item = 1; item < 11; item++) {
+  const list = document.createElement("li");
+  list.classList.add("animateItem");
+
+  const randleSize = (min, max) => {
+    return Math.random() * (max - min) + min;
+  };
+
+  const size = Math.floor(randleSize(80, 10));
+  const postion = randleSize(1, 99);
+  const delay = randleSize(5, 0.1);
+  const duration = randleSize(24, 12);
+
+  list.style.width = `${size}px`;
+  list.style.height = `${size}px`;
+  list.style.bottom = `-${size}px`;
+  list.style.left = `${postion}%`;
+
+  list.style.animationDelay = `${delay}s`;
+  list.style.animationDuration = `${duration}s`;
+  list.style.animationTimingFunction = `cubic-bezier(${Math.random()},${Math.random()},${Math.random()},${Math.random()})`;
+
+  document.getElementById("animation").appendChild(list);
+}
+
 ScrollReveal({ distance: "60px" });
 ScrollReveal().reveal("#text", { origin: "left" });
 ScrollReveal().reveal("#imgPrincipal", { origin: "right" });
@@ -46,16 +71,6 @@ ScrollReveal().reveal("#projetos__container", {
 ScrollReveal().reveal($imgs, {
   origin: "bottom",
 });
-
-// $imgs.each((index, value) => $(value).css("display", "none"));
-// $imgs.each((index, value) => {
-//   setTimeout(() => {
-//     $(value).css("display", "block");
-//     ScrollReveal().reveal(value, {
-//       opacity: 0,
-//     });
-//   }, index * 1000);
-// });
 
 ScrollReveal().reveal("#imgSobre", {
   scale: 0.8,
