@@ -6,6 +6,10 @@ $("#menuMobile").click(() => {
   $("#menu").css("display", "flex");
   $("#nav__close").css("display", "block");
 });
+$("#nav__close").click(() => {
+  $("#menu").css("display", "none");
+  $("#menuMobile").css("display", "block");
+});
 
 $(document).ready($(window).bind("resize", CheckPx));
 
@@ -19,10 +23,6 @@ function CheckPx() {
     $("#menu").css("display", "none");
     $("#menuMobile").css("display", "block");
 
-    $("#nav__close").click(() => {
-      $("#menu").css("display", "none");
-      $("#menuMobile").css("display", "block");
-    });
     $("#link_sobre").click(() => {
       $("#menu").css("display", "none");
       $("#menuMobile").css("display", "block");
