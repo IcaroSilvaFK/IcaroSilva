@@ -21,10 +21,6 @@
     width: 100%;
   }
 
-  .contato__buttons button {
-    width: 100px;
-  }
-
   main #sobre {
     flex-direction: column-reverse;
     text-align: center;
@@ -56,6 +52,9 @@
   }
   #contato button {
     width: 100%;
+  }
+  .contato__buttons button {
+    width: 100px;
   }
 
   /* * title::after */
