@@ -53,27 +53,12 @@
   #contato button {
     width: 100%;
   }
-  #contato div {
-    gap: 20px;
-  }
+
   /* * title::after */
   #title {
     height: 50px;
   }
   #title::after {
     display: none;
-  }
-  #contribuitions {
-    width: 100%;
-
-    padding: 10px;
-  }
-  #contribuitions strong {
-    font-size: 0.9rem;
-  }
-
-  #contribuitions svg {
-    width: 100%;
-    height: 100px;
   }
 }

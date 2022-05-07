@@ -41,10 +41,11 @@ header div span {
 .responsive__nav {
   position: absolute;
 }
+
 nav ul li a:hover {
   color: var(--purple-800);
-  transition: linear 0.2s;
 }
+
 @media (max-width: 500px) {
   header {
     padding: 10px;
