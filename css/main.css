@@ -181,7 +181,7 @@ main #sobre {
 }
 
 .contato__buttons button {
-  outline: 1px solid var(--purple-800);
+  border: 1px solid var(--purple-800);
   color: var(--purple-800);
 
   width: 120px;
