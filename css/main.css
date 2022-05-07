@@ -7,7 +7,7 @@ main {
 
   margin-top: 100px;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 main #presentation {
   display: flex;
@@ -65,6 +65,7 @@ main #sobre {
   padding: 50px 0;
 
   position: relative;
+  overflow: hidden;
 }
 
 #description {
@@ -150,9 +151,24 @@ main #sobre {
   margin-top: 30px;
   display: flex;
   align-items: center;
+  flex-direction: column-reverse;
   gap: 20px;
 }
-#contato div {
+
+#contato button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+}
+
+#contato button a svg {
+  width: 15px;
+  height: 15px;
+}
+
+#contato .contato__buttons {
   display: flex;
 
   gap: 15px;
@@ -162,6 +178,29 @@ main #sobre {
 #contato svg {
   width: 24px;
   height: 24px;
+}
+
+.contato__buttons a {
+  outline: 1px solid var(--purple-800);
+  color: var(--purple-800);
+
+  width: 150px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+
+  transition: all 0.4s;
+}
+
+.contato__buttons a:hover {
+  background: var(--purple-800);
+
+  outline: none;
+
+  color: #fff;
 }
 
 footer {
@@ -191,6 +230,19 @@ footer div svg {
   transition: linear 0.3s;
 }
 
+#contribuitions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 10px;
+
+  position: relative;
+  z-index: 1;
+
+  font-size: 1.2rem;
+}
+
 /*! Animação */
 
 #listAnimation li {
@@ -212,5 +264,38 @@ footer div svg {
   100% {
     opacity: 0;
     transform: translateY(-1000px);
+  }
+}
+
+/* *title after */
+
+#title {
+  height: 100px;
+}
+
+#title::after {
+  content: "";
+
+  width: 1.8px;
+  height: 35px;
+
+  display: inline-block;
+
+  background-color: #2d3748;
+
+  margin-left: 10px;
+
+  animation: animatePisc 1s linear infinite alternate;
+}
+
+@keyframes animatePisc {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 5;
+  }
+  50% {
+    opacity: 0;
   }
 }

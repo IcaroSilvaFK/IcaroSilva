@@ -13,6 +13,20 @@ $("#nav__close").click(() => {
 
 $(document).ready($(window).bind("resize", CheckPx));
 
+const $title = $("#title");
+
+$title.ready(() => {
+  const newArray = $title.text().split("");
+  $title[0].innerHTML = "";
+
+  newArray.forEach((element, index) => {
+    console.log(element);
+    setTimeout(() => {
+      $title[0].innerHTML += element;
+    }, 400 * index);
+  });
+});
+
 function CheckPx() {
   if ($(window).width() > 500) {
     $("#menu").css("display", "block");
@@ -78,3 +92,17 @@ ScrollReveal().reveal("#imgSobre", {
   scale: 0.8,
   mobile: true,
 });
+
+async function getProjetcts() {
+  try {
+    const response = await fetch("https://api.github.com/users/IcaroSilvaFK");
+    const data = await response.json();
+    console.log(data);
+    // const array = data.reduce((acc, element) => acc.concat(element.name), []);
+    // console.log(array);
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+getProjetcts();
