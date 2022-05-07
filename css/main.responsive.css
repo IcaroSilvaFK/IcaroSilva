@@ -53,7 +53,7 @@
   #contato button {
     width: 100%;
   }
-  .contato__buttons button {
+  #contato .contato__buttons button {
     width: 100px;
   }
 
