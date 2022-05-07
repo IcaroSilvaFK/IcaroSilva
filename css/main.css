@@ -192,6 +192,8 @@ main #sobre {
   justify-content: center;
   border-radius: 20px;
 
+  -webkit-border-radius: 20px;
+
   transition: all 0.4s;
 }
 
