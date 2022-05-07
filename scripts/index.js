@@ -20,7 +20,6 @@ $title.ready(() => {
   $title[0].innerHTML = "";
 
   newArray.forEach((element, index) => {
-    console.log(element);
     setTimeout(() => {
       $title[0].innerHTML += element;
     }, 400 * index);
@@ -97,7 +96,6 @@ async function getProjetcts() {
   try {
     const response = await fetch("https://api.github.com/users/IcaroSilvaFK");
     const data = await response.json();
-    console.log(data);
     // const array = data.reduce((acc, element) => acc.concat(element.name), []);
     // console.log(array);
   } catch (e) {
